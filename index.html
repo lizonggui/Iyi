@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0" />
+		<title>医次方</title>	
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/remind.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/interaction.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/mine.css"/>
+	</head>
+	<body>
+		<div class="container">			
+			<header>
+				<div class="head1">
+				    <div class="dingwei">
+				    	<span id="city">未获取城市</span>			    	
+				    	<img class="location" src="img/index/定位.png"/>
+				    </div>
+					<span class="title">预约</span>
+					<img class="search" src="img/index/s1.png"/>					
+				</div>
+				<div class="head2">
+					<span class="title">提醒</span>
+					<img class="search" src="img/index/s2.png"/>
+				</div>
+				<div class="head3">
+					<span class="title">互动社区</span>
+					<img class="liebiao" src="img/index/列表.png"/>
+					<img class="search" src="img/index/s3.png"/>
+				</div>
+				<div class="head4">
+					<span class="title">我的</span>	
+					<div class="plate4-head">
+						<div class="myhead">
+							<img class="myhead_portrait" src="img/index/myhead.jpg"/>							
+							<div class="nicheng">
+								<p>未实名</p>
+								<span>猫咪</span>
+								<span>(昵称)</span>
+							</div>
+						</div>
+						<a href="javascript:;">完善个人信息 ></a>
+					</div>
+				</div>
+			</header>
+			<section ui-view>                
+			  		  
+			</section>
+			<footer>
+				<a class="active" href="#!/appointment">
+					<i class="iconfont1">&#xe64b;</i>
+					<p>预约</p>
+				</a>
+				<a href="#!/remind">
+					<i class="iconfont1">&#xe607;</i>
+					<p>提醒</p>
+				</a>
+				<a href="#!/interaction">
+					<i class="iconfont1">&#xe865;</i>
+				    <p>互动</p>
+				</a>
+				<a href="#!/mine">
+					<i class="iconfont1">&#xe60b;</i>
+					<p>我的</p>
+				</a>				
+			</footer>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.1.min.js"></script>				
+    <script src='js/swipe.js'></script>
+    <script src="js/swiper-3.4.2.min.js"></script>	
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WSIOdGtkKFr5PoIWT4vDGUyp4iR1hfqL"></script>
+    <script src="js/size.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-ui-router.min.js"></script>
+	<script src="js/module/appointment.js"></script>
+	<script src="js/module/interaction.js"></script>
+	<script src="js/module/mine.js"></script>
+	<script src="js/module/remind.js"></script>			
+	<script src="js/index/index.js"></script>
+	 
+</html>

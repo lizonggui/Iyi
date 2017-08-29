@@ -1,0 +1,282 @@
+* {
+	-webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}			
+html,
+body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		font-size: 0.16rem;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+li{
+	list-style: none;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column; 
+  }
+header, footer {
+  width: 100%;
+  overflow: hidden;
+  }
+ section {
+  width: 100%;
+  height: auto;
+  margin-top: 0.51rem;
+  overflow-y: auto;
+  background: #f9f7f8;
+    
+  }
+.section_container{	
+  	overflow-x: hidden;
+  	width: 100%;
+  	height: auto;
+  	padding-bottom: 0.45rem;
+  	background: #f9f7f8;
+    flex-flow: column nowrap;
+  }
+section::-webkit-scrollbar{
+  	width: 0px;
+  }
+header{ 	 	
+ 	background: #6daf45;
+ 	line-height: 0.51rem;
+ 	position: fixed;
+ 	top: 0;
+ 	color: #fff;
+ 	
+  }
+.head1,.head2,.head3{
+	width: 100%;
+	height: 0.51rem;	
+	border-bottom: 0.01rem solid #d0d9c4;		
+}
+.head4{
+	width: 100%;
+	height: 1.21rem;
+	background: #6daf45;
+	border-bottom: 0.02rem solid #ededef;
+	padding-top: 0.51rem;	
+}
+.dingwei{
+	float: left;
+}
+.head2,.head3,.head4{display: none;}
+footer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	color: #aaa;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	background: #fff;
+	height: 0.45rem;
+	border-top:0.01rem solid #ccc;
+}
+.title{
+	position: absolute;
+	top: 0;
+	left: 1.44rem;
+	color: #fff !important;
+}
+#city{
+	float: left;
+	margin-left: 0.1rem;
+	color: #fff;
+	font-size: 0.14rem;
+}
+.location{
+	width: 0.23rem;
+	height: 0.23rem;
+	margin-top:0.15rem;
+	float: left;
+	
+}
+.search{
+	float: right;
+	width: 0.25rem;
+	height: 0.25rem;
+    margin-right: 0.1rem;
+    margin-top: 0.15rem;
+}
+.liebiao{
+	width: 0.25rem;
+	height: 0.25rem;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: 0.15rem;
+}
+
+/*内容页*/
+/*轮播图*/
+#jiaodiantu {
+	position: relative;
+	width: 100%;
+	height: 1.45rem;	
+	border-bottom: 0.01rem solid #d0d9c4;
+}
+
+.swipe-wrap {
+	width: 100%;
+	padding: 0px !important;
+}
+
+.swipe-wrap>div {
+	float: left;
+	width: 100%;
+	height: 1.45rem;
+	position: relative;
+}
+.swipe-wrap>div img{
+	width: 100%;
+	height:100% ;
+}
+.xiaoyuandian {
+	list-style: none;
+	position: absolute;
+	bottom: 0.01rem;
+	right:0.6rem;
+	width:1.3rem;
+	height: 0.15rem;
+}
+
+.xiaoyuandian li {
+	width: 0.1rem;
+	height: 0.1rem;
+	background: #fff;
+	float: left;
+	margin-right: 0.1rem;
+	border-radius: 0.05rem;
+}
+
+.xiaoyuandian li.cur {
+	background: #6daf45;
+}
+/*内容板块*/
+.plate{
+	width: 100%;
+	height: 1.94rem;
+}
+.plate li{
+	list-style: none;
+	width: 1.45rem;
+	height: 0.87rem;
+	background: #fff;
+	float: left;
+	margin-left: .1rem;
+	margin-top: .1rem;
+	text-align: center;
+}
+.plate li img{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-top:0.16rem;
+}
+/*名医推荐*/
+.doc-recommend{
+	min-width: 3.2rem;
+	height: 1.3rem;
+	background: #fff;
+	margin-top:0.07rem;
+}
+.rec{
+	position: relative;
+	width: 100%;
+	height: 0.28rem;
+}
+.rec img{
+	position: absolute;
+	top:-0.05rem;
+	left: 0.06rem;
+	width: 0.5rem;
+	height: 0.35rem;
+}
+.rec h3{
+	float: left;
+	font-size: 0.16rem;
+	font-weight:200;
+	margin-left: 0.47rem;
+	margin-top: 0.13rem;
+}
+.rec a{
+	float: right;
+	margin-top: 0.14rem;
+	margin-right: 0.14rem;
+	font-size: 0.14rem;
+	color: #ababab;
+}
+.swiper-container{
+	width: 100% !important;
+	
+	margin-top: 0.12rem;	
+}
+.swiper-slide{	
+	width: 0.8rem !important;
+	height: 0.9rem !important;
+	overflow-y: hidden;
+	text-align: center;
+}
+.swiper-slide div{
+	width: 0.54rem;
+	height: 0.54rem;
+		
+}
+.swiper-wrapper1 img{
+	width: 0.54rem;
+	height: 0.54rem;
+	border-radius: 0.27rem;
+	margin-left: 0.13rem;
+}
+.swiper-slide p:first-of-type{
+	font-size: 0.14rem;
+	color: #000;
+}
+.swiper-slide p:nth-of-type(2){
+	font-size: 0.12rem;
+	color: #ababab;
+}
+.swiper-wrapper2 img{
+	width: 0.54rem;
+	height: 0.54rem;
+	margin-left: 0.13rem;
+}
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../font/font1/iconfont.eot');
+  src: url('../../font/font1/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../font/font1/iconfont.woff') format('woff'),
+  url('../../font/font1/iconfont.ttf') format('truetype'),
+  url('../../font/font1/iconfont.svg#iconfont') format('svg');
+}
+.iconfont1{
+  font-family:"iconfont" !important;
+  font-size:0.22rem;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+footer a{
+	display: inline-block;
+	color: #999;
+}
+footer p{
+	font-size: 0.12rem;
+}
+.active{
+	color: #6aaf3b;
+}
+.active p{
+	color: #6aaf3b;
+}
